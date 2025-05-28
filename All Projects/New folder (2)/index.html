@@ -1,0 +1,34 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Background Image Test</title>
+  <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random YouTube Redirect</title>
+  <link rel="stylesheet" href="style.css"> <!-- Make sure style.css is present -->
+</head>
+<body>
+  <h1>Appa... happy birthday! Click below to get Akkara Karchagal 🎉</h1>
+  <button onclick="goToRandomVideo()">Watch Akkara Karchagal :0</button>
+
+  <script>
+    const videos = [
+      { id: 'C3zJFqhbP_Y', time: 68 },   
+      { id: 'JrsFiqWvOHU', time: 842 },  
+      { id: 'Y4dpwcZaGVM', time: 365 },  
+      { id: 'JsUTpSlrMyw', time: 5 }     
+      
+    ];
+
+    function goToRandomVideo() {
+      const randomIndex = Math.floor(Math.random() * videos.length);
+      const video = videos[randomIndex];
+      const url = `https://www.youtube.com/watch?v=${video.id}&t=${video.time}s`;
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
+

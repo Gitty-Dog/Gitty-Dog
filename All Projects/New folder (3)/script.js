@@ -3,7 +3,7 @@ const scoreDisplay = document.getElementById('score');
 const timeDisplay = document.getElementById('time');
 
 let score = 0;
-let timeLeft = 30;
+let timeLeft = 60;
 let gameInterval;
 
 function spawnCircle() {
